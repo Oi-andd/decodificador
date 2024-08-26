@@ -1,0 +1,51 @@
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Space+Mono&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img class="header__logo" src="./assets/Logo (1).svg" alt="">
+        </div>
+    </header>
+    <main>
+        <article class="main">
+            <section class="left" id="left">
+                <textarea class="entrada__texto" id="entradaTexto" placeholder="Digite seu texto" autofocus></textarea>
+                <div class="left__footer">
+                    <img src="./assets/bi_exclamation-circle-fill (1).svg" alt="advertencia">
+                    <span class="left__lembrete">Apenas letras minúsculas e sem acento.</span>
+                    <div class="left__butoes">
+                        <button  id="butao__criptografar" class="butao__criptografar">Criptografar</button>
+                        <button id="butao__descriptografar" class="butao__descriptografar">Descriptografar</button>
+                    </div>
+                </div>
+            </section>
+            <section id="rigth" class="right ajustar">
+                <img id="boneco" class="boneco" src="./assets/boneco.svg" alt="">
+                    <!--<div class="">
+                    </div> -->
+                    <p id="mensagemFinal" class="mensagem__final">Nenhuma mensagem encontrada</p>
+                    <p id="mensagemInfo" class="mensagem__info">Digite um texto que deseja criptografar ou descriptografar</p>
+                <button id="butaoCopiar" class="butao__copiar oculto">Copiar</button>
+            </section>
+        </article>
+    </main>
+    <!--
+    <footer>
+
+    </footer>
+    -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
